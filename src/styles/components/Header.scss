@@ -1,0 +1,69 @@
+.Header {
+  height: 10vh;
+  display: grid;
+  grid-template-columns: 2fr 2fr 40px 40px 2fr;
+  text-align: center;
+  align-items: center;
+  grid-gap: 5px;
+  grid-template-areas: "title search icon-cart icon-user header-button";
+  @media only screen and (max-width: 624px) {
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas:
+      "title icon-cart"
+      " search search";
+  }
+  z-index: 1;
+  & .Header-button {
+    width: 80%;
+  }
+  & .Header-icon {
+    padding: 5px;
+    justify-self: start;
+  }
+  & .header-title {
+    grid-area: title;
+    font-weight: bold;
+  }
+  & .Header-container_search {
+    grid-area: search;
+    display: flex;
+    justify-content: space-between;
+    background: #eeeeee;
+    @media only screen and (max-width: 624px) {
+      margin-left: 30%;
+    }
+    & .Header-search {
+      background: #eeeeee;
+      border: none;
+      width: 80%;
+      outline: none;
+    }
+    & .Header-search_icon {
+      padding: 5px;
+      font-size: 0.8rem;
+    }
+  }
+  & .Header-button {
+    width: 50%;
+    grid-area: header-button;
+    @media only screen and (max-width: 624px) {
+      display: none;
+    }
+  }
+  & .Header-button_icon {
+    border: none;
+    background: none;
+  }
+  & .icon-user {
+    grid-area: icon-user;
+    @media only screen and (max-width: 624px) {
+      display: none;
+    }
+  }
+  & .icon-cart {
+    grid-area: icon-cart;
+  }
+  & .bg-gray {
+    background: #dedede;
+  }
+}

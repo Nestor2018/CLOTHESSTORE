@@ -1,0 +1,9 @@
+.ListPorducts {
+  margin: 0 193px 0 193px;
+  display: grid;
+  grid-gap: 62px;
+  grid-template-columns: repeat(auto-fit, 336px);
+  @media only screen and (max-width: 624px) {
+    margin-left: 22%;
+  }
+}

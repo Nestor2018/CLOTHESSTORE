@@ -1,0 +1,43 @@
+@import "../constant/colors.scss";
+
+.NavBar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: left;
+  background: $color-white;
+  position: fixed;
+  width: 90%;
+  height: 100vh;
+  transition: right 0.3s linear;
+  top: 0;
+
+  @media only screen and (min-width: 624px) {
+    flex-direction: row;
+    position: initial;
+    width: 100%;
+    height: auto;
+  }
+
+  & a {
+    padding: 0.5rem 0.8rem;
+    color: $color-white;
+    text-decoration: none;
+    @media only screen and (max-width: 624px) {
+      color: $color-black;
+      font-size: 40px;
+      text-align: left;
+    }
+  }
+  & p {
+    display: none;
+    @media only screen and (max-width: 624px) {
+      display: block;
+      position: absolute;
+      right: 20px;
+      font-size: 70px;
+      font-weight: bold;
+      color: $color-purple;
+    }
+  }
+}
