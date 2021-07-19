@@ -73,11 +73,6 @@ module.exports = {
     new webpack.DllReferencePlugin({
       manifest: require("./modules-manifest.json"),
     }),
-    new AddAssetHtmlPlugin({
-      filepath: path.resolve(__dirname, "dist/js/*.dll.js"),
-      outputPath: "js",
-      publicPath: "https://Nestor2018.github.io/CLOTHESSTORE",
-    }),
     new CleanWebpackPlugin({
       cleanOnceBeforeBuildPatterns: ["**/app.*"], // borra solo los archivos que tengan app.js o css par auqe no borre las imagenes
     }),
