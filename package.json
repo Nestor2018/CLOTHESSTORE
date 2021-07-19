@@ -2,7 +2,7 @@
   "name": "experimentality",
   "version": "1.0.0",
   "description": "",
-  "homepage": "http://Nestor2018.github.io/CLOTHESSTORE",
+  "homepage": "https://Nestor2018.github.io/CLOTHESSTORE",
   "main": "index.js",
   "scripts": {
     "predeploy": "npm run build:prod",

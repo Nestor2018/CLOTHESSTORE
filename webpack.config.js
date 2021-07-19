@@ -14,7 +14,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "js/[name].[hash].js",
-    publicPath: "http://Nestor2018.github.io/CLOTHESSTORE", // cdn donde se leera el proyecto
+    publicPath: "https://Nestor2018.github.io/CLOTHESSTORE", // cdn donde se leera el proyecto
     chunkFilename: "js/[id].[chunkhash].js",
   },
   optimization: {
@@ -76,7 +76,7 @@ module.exports = {
     new AddAssetHtmlPlugin({
       filepath: path.resolve(__dirname, "dist/js/*.dll.js"),
       outputPath: "js",
-      publicPath: "http://Nestor2018.github.io/CLOTHESSTORE",
+      publicPath: "https://Nestor2018.github.io/CLOTHESSTORE",
     }),
     new CleanWebpackPlugin({
       cleanOnceBeforeBuildPatterns: ["**/app.*"], // borra solo los archivos que tengan app.js o css par auqe no borre las imagenes
