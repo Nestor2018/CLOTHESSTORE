@@ -5,7 +5,7 @@
   "homepage": "https://Nestor2018.github.io/CLOTHESSTORE",
   "main": "index.js",
   "scripts": {
-    "predeploy": "npm run build:prod",
+    "predeploy": "npm run build:dll && npm run build:prod",
     "deploy": "gh-pages -d dist",
     "svgr": "svgr -d src/Icons/ assets/",
     "test": "jest",
