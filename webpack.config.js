@@ -70,9 +70,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "public/index.html"),
     }),
-    new webpack.DllReferencePlugin({
-      manifest: require("./modules-manifest.json"),
-    }),
     new CleanWebpackPlugin({
       cleanOnceBeforeBuildPatterns: ["**/app.*"], // borra solo los archivos que tengan app.js o css par auqe no borre las imagenes
     }),
